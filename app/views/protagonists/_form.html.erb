@@ -1,0 +1,65 @@
+<%= form_with(model: protagonist, class:"form", local: true) do |f| %>
+  <% if protagonist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(protagonist.errors.count, "error") %> prohibited this protagonist from being saved:</h2>
+
+      <ul>
+        <% protagonist.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= render partial: 'devise/registrations/commonInfo', locals: {f: f, kind: @kind} %>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text text-info"><%= t 'activerecord.attributes.protagonist.profession' %></span>
+    </div>
+    <%= f.text_field :profession %>
+  </div>
+
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text text-info"><%= t 'activerecord.attributes.protagonist.location' %></span>
+
+  </div>
+    <%= f.text_field :university , id: "university", placeholder:"#{t 'activerecord.attributes.protagonist.university'}"%>
+  <%= f.text_field :department, id: "department", placeholder: "#{t 'activerecord.attributes.protagonist.department'}" %>
+  <%= f.text_field :edifice , id: "edifice", placeholder:"#{t 'activerecord.attributes.protagonist.edifice'}"%>
+  </div>
+
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text text-info"><%="#{t 'activerecord.attributes.protagonist.address'}" %></span>
+    </div>
+    <%= f.text_field :homeAddress , id: "homeAddress", placeholder:"#{t 'activerecord.attributes.protagonist.homeAddress'}"%>
+    <%= f.text_field :workAddress , id: "workAddress", placeholder:"#{t 'activerecord.attributes.protagonist.workAddres'}"%>
+  </div>
+
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text text-info"><%="#{t 'activerecord.attributes.protagonist.phone'}" %></span>
+    </div>
+    <%= f.text_field :homePhone , id: "homePhone", placeholder:"#{t 'activerecord.attributes.protagonist.homePhone'}"%>
+    <%= f.text_field :workPhone , id: "workPhone", placeholder:"#{t 'activerecord.attributes.protagonist.workPhone'}" %>
+  </div>
+
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroupFileAddon01"><%="#{t 'activerecord.attributes.protagonist.profilePhoto'}" %></span>
+    </div>
+    <div class="custom-file">
+      <%= f.file_field :avatar, class:"custom-file-input", id: "inputGroupFile01" %>
+      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+    </div>
+  </div>
+
+
+  <div class="input-group mb-3">
+    <%= f.submit class: "btn btn-info btn-md" %>
+  </div>
+<% end %>

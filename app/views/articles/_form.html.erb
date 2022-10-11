@@ -1,0 +1,64 @@
+<%= form_with(model: @article, local: true) do |f| %>
+
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text, rows: "5", class: "w-25 p-3"%>
+  </p>
+
+  <p>
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </p>
+
+  <p>
+    <%= f.label :description %>
+    <%= f.rich_text_area :content , rows: "5", class: "w-50 p-3" %>
+  </p>
+
+  <p>
+    <%= f.label :conferenceName %><br>
+    <%= f.text_field :conferenceName %>
+  </p>
+
+  <p>
+    <%= f.label :date %><br>
+    <%= f.date_field :date %>
+  </p>
+   
+   <p>
+    <%= f.label :paperUrl %><br>
+    <%= f.text_field :paperUrl %>
+  </p>
+
+   <!-- 
+      <p>
+    <%= f.label "Paper" %><br>
+    <%= f.file_field :paper %>
+    </p>
+  -->
+  
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

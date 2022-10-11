@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profession: MyString
+  department: MyString
+  university: MyString
+  edifice: MyString
+  homeAddress: MyString
+  workAddress: MyString
+  homePhone: MyString
+  workPhone: MyString
+
+two:
+  profession: MyString
+  department: MyString
+  university: MyString
+  edifice: MyString
+  homeAddress: MyString
+  workAddress: MyString
+  homePhone: MyString
+  workPhone: MyString

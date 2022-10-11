@@ -1,0 +1,68 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+h2 {
+  color: #39abac;
+}
+#title {
+  text-align: center;
+}
+li {
+  font-size: 18px;
+}
+div > p{
+  font-size: 20px;
+}
+
+
+
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+li {
+  counter-increment: section;
+
+}
+li.publication:before  {
+  content: "[" counter(section, decimal) "] ";
+  color: red;
+}
+
+.row{
+  color: red;
+  //width: 5px;
+}
+
+.articles{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.mycontent-left {
+  border-right: 1px solid #333;
+}
+
+
+
+
+
+/*
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: lightblue;
+  border-radius: 100%;
+  color: white;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+} */

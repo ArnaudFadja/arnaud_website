@@ -1,0 +1,39 @@
+<div class ="info">
+  <h1>
+   Dr <%=@protagonist.name  %>
+    <%=@protagonist.lastName  %>
+  </h1>
+<p>
+  <br> <br>
+<%=t 'activerecord.attributes.protagonist.profession' %>: <%=@protagonist.profession %>
+</p>
+
+<p >
+  <%=@protagonist.department %>,  <%= link_to @protagonist.university, "http://www.unife.it", class: "text-danger" %>
+</p>
+
+<p>
+  <%=@protagonist.edifice %>
+</p>
+
+<p>
+  <%=@protagonist.university %>
+</p>
+
+<p>
+  <%=@protagonist.workAddress %>
+</p>
+
+<p>
+ Tel: <%=@protagonist.workPhone %>  Fax: <%=@protagonist.workPhone %>
+
+</p>
+
+  <p>
+    E-Mail: <%=mail_to(@protagonist.email, name = nil, html_options = {class: "text-danger"}) %>
+  </p>
+
+<p>
+  <%=@protagonist.university %>
+</p>
+</div>

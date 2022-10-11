@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @protagonist.profession %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @protagonist.department %>
+</p>
+
+<p>
+  <strong>University:</strong>
+  <%= @protagonist.university %>
+</p>
+
+<p>
+  <strong>Edifice:</strong>
+  <%= @protagonist.edifice %>
+</p>
+
+<p>
+  <strong>Homeaddress:</strong>
+  <%= @protagonist.homeAddress %>
+</p>
+
+<p>
+  <strong>Workaddress:</strong>
+  <%= @protagonist.workAddress %>
+</p>
+
+<p>
+  <strong>Homephone:</strong>
+  <%= @protagonist.homePhone %>
+</p>
+
+<p>
+  <strong>Workphone:</strong>
+  <%= @protagonist.workPhone %>
+</p>
+
+<%= link_to 'Edit', edit_protagonist_path(@protagonist) %> |
+<%= link_to 'Back', protagonists_path %>

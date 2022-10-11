@@ -1,0 +1,8 @@
+
+<% if current_user && current_user.admin %>
+<ol>
+  <% @authors.each do |author| %>
+    <li><%= author.name %>. <%= author.email %>.</li>
+  <% end %>
+</ol>
+<%end %>

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Protagonists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profession</th>
+      <th>Department</th>
+      <th>University</th>
+      <th>Edifice</th>
+      <th>Homeaddress</th>
+      <th>Workaddress</th>
+      <th>Homephone</th>
+      <th>Workphone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @protagonists.each do |protagonist| %>
+      <tr>
+        <td><%= protagonist.profession %></td>
+        <td><%= protagonist.department %></td>
+        <td><%= protagonist.university %></td>
+        <td><%= protagonist.edifice %></td>
+        <td><%= protagonist.homeAddress %></td>
+        <td><%= protagonist.workAddress %></td>
+        <td><%= protagonist.homePhone %></td>
+        <td><%= protagonist.workPhone %></td>
+        <td><%= link_to 'Show', protagonist %></td>
+        <td><%= link_to 'Edit', edit_protagonist_path(protagonist) %></td>
+        <td><%= link_to 'Destroy', protagonist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Protagonist', new_protagonist_path %>

@@ -1,0 +1,97 @@
+<!-- Footer -->
+<footer class=" font-small navbar navbar-default navbar-static-bottom" >
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold text-dark mt-2"><%= t "global.company" %></h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 125px;">
+        <p class="text-dark"><%= t "global.departement" %></p>
+        <p class="text-dark"><%= t "global.university" %></p>
+
+      </div>
+      <!-- Grid column -->
+
+
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-6 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold text-dark mt-2 register"><%= t "global.contact" %></h6>
+         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<hr class="deep-purple accent-8 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+        <p>
+          <i class="fas fa-university mr3 text-black-50"></i> <span class="text-dark"> Konrad-Zuse-Str. 19, D-66459 Limbach (Saarland), Germany </span>
+        </p>
+        <p>
+          <i class="fas fa-envelope mr-3 text-black-50"></i> <span class="text-dark"> arnaud.fadja.n@gmail.com </span>
+        </p>
+        <p>
+          <i class="fas fa-phone mr-3 text-black-50"></i> <span class="text-dark"> +49 (0) 6841 80 90 10</span>
+        </p>
+        <!--
+        <p>
+          <i class="fas fa-print mr-3 text-black-50"></i> <span class="text-dark">  +49 (0) 6841 80 90 11 78 </span>
+        </p>
+        -->
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold text-dark mt-2"><%= t "global.link" %></h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 108px;">
+        <p>
+          <!-- <a href="http://ml.unife.it/arnaud-nguembang-fadja/">University website</a> -->
+          <%= link_to image_tag("machineLearning.png", alt: "Rails", width: "100px"), 'http://ml.unife.it/', { class: 'tooltips', 'data-toggle' => 'tooltip', 'data-placement' => 'right', :title => '', 'data-original-title' => 'Machine Learning Unife' } %>
+        </p>
+        <p>
+          <%= link_to image_tag("sysait.png", alt: "Rails", width: "100px"), 'https://www.sysaitechnology.com/', { class: 'tooltips', 'data-toggle' => 'tooltip', 'data-placement' => 'right', :title => '', 'data-original-title' => 'System Afrik Information Technology' } %>
+        </p>
+        <p>&nbsp;
+          <%= link_to 'https://www.facebook.com/arnaud.fadja', { class: 'tooltips, text-info', 'data-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => 'Facebook' } do %>
+            <i class="fab fa-1x fa-facebook-square icon-2x "></i>
+          <% end %>
+
+          &nbsp;<%= link_to 'https://www.instagram.com/arnaudfa1/?hl=it', { class: 'tooltips, text-info', 'data-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => 'Instagram' } do %>
+            <i class="fab fa-1x fa-instagram-square icon-2x "></i>
+          <% end %>
+          &nbsp;
+          <%= link_to 'https://www.linkedin.com/in/arnaud-fadja-70335a183/', { class: 'tooltips, text-info', 'data-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => 'Linkedin' } do %>
+            <i class="fab fa-linkedin icon-2x"></i>
+          <% end %>
+          &nbsp;
+          <%= link_to 'https://twitter.com/arnaldofadja', { class: 'tooltips, text-info', 'data-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => 'Twitter' } do %>
+            <i class="fab fa-twitter icon-2x"></i>
+          <% end %>
+        </p>
+
+
+
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  Copyright -->
+
+</footer>
+<!-- Footer -->

@@ -1,0 +1,50 @@
+<!--
+<div class="field">
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</div>
+
+<div class="field">
+  <%= f.label :lastName %><br />
+  <%= f.text_field :lastName %>
+</div>
+
+<div class="field">
+  <%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+</div>
+
+<div class="field">
+  <%= f.label :password %>
+  <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+  <% end %><br />
+  <%= f.password_field :password, autocomplete: "new-password" %>
+</div>
+
+<div class="field">
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+</div>
+-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text text-info"><%="#{t 'global.name'}" %></span>
+  </div>
+  <%= f.text_field :name, id: "name", placeholder: "#{t 'users.name'}" %>
+  <%= f.text_field :lastName , id: "#{t 'users.lastName'}", placeholder:"#{t 'users.lastName'}"%>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text text-info"><%="#{t 'users.email'}" %></span>
+  </div>
+  <%= f.email_field :email, id: "email" %> <!--<em>(<%=(t'global.messageEmail', count: @minimum_password_length)%>)</em> -->
+</div>
+
+<% unless current_user %>
+  <%= render partial: 'devise/registrations/passwordSetting', locals: {f: f, kind: @kind} %>
+  <%else %>
+  <%current_user.has_role? :admin %>
+  <%= render partial: 'devise/registrations/passwordSetting', locals: {f: f, kind: @kind} %>
+<%end %>

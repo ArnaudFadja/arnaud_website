@@ -1,0 +1,12 @@
+<p>
+  <strong><%= comment.commenter %>: </strong>
+  <%= comment.body %>
+  <% if current_user %>
+  <% if policy(comment).destroy? %>
+    <%= link_to  [comment.article, comment], { class: 'tooltips, text-danger', 'data-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => "#{t 'global.deleteComment'}", method: :delete, data: {confirm: "#{t 'global.confirmDelete'}" }} do %>
+        <i class="fa fa-trash" aria-hidden="true" ></i>
+      <%end %>
+  <%end %>
+  <%end %>
+</p>
+

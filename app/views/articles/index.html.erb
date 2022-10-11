@@ -1,0 +1,64 @@
+<div class="articles" id="art">
+<div>
+  <!-- <%=link_to "reset your password", edit_user_password_url(reset_password_token: @token), html_options = { style: "font-weight: bold" } %> -->
+  <%if current_user %>
+    <% if current_user.has_any_role? :admin, :protagonist %>
+
+      <%= link_to 'Change Password', "/users/update_password" %>
+      <%= link_to 'New article', new_article_path %>
+      <%= link_to 'New author', new_author_path %>
+      <% if current_user.has_role? :admin %>
+      <%= link_to 'New protagonist', new_protagonist_path %>
+        <%= link_to "List users", listUsers_articles_path %>
+      <%end %>
+      <% unless @protagonist.nil?  %>
+          <%= link_to 'Edit protagonist', edit_protagonist_path(@protagonist) %>
+
+        <% if current_user.has_role? :admin %>
+          <%= link_to 'Destroy protagonist', protagonist_path(@protagonist), method: :delete, data: {confirm: "#{t 'global.confirmDelete'}"}%>
+        <%end %>
+      <%end %>
+    <%end %>
+
+    <%end %>
+</div>
+  <% unless @protagonist.nil?  %>
+<div class="d-flex title-paper">
+  <div>
+    <%= render partial: 'protagonistsInfo',  locals: {protagonist: @protagonist} %>
+  </div>
+  <div class="mx-auto d-block media ">
+    <p>
+      <% if @protagonist.avatar.attached? %>
+        <%= image_tag("Arnaud.png", alt: "Dr Arnaud Nguembang Fadja", width: "300px") %>
+      <%end %>
+    </p>
+    
+  </div>
+</div>
+    <%end %>
+    <!-- image_tag(@protagonist.avatar,size: '300')  --> 
+<div class='row'>
+  <div class='col-lg-12 col-lg-offset-2' >
+    <hr class="line">
+  </div>
+</div>
+  <h2 id ="title", class="display-3"> <%= t '.publications' %></h2>
+  <h2 class="title-paper"><%= t '.journals' %></h2>
+<% @articles = Article.categorized("journal").sorted_by_date %>
+<%= render partial: 'listArticle',  locals: {articles: @articles} %>
+
+<h2 class="title-paper"><%= t '.chapters' %></h2>
+<% @articles = Article.categorized("chapter").sorted_by_date %>
+<%= render partial: 'listArticle',  locals: {articles: @articles} %>
+
+<h2 class="title-paper"><%= t '.conferences' %></h2>
+<% @articles = Article.categorized("conference").sorted_by_date %>
+<%= render partial: 'listArticle',  locals: {articles: @articles} %>
+
+<h2 class="title-paper"><%= t '.workshops' %></h2>
+<% @articles = Article.categorized("workshop").sorted_by_date %>
+<%= render partial: 'listArticle',  locals: {articles: @articles} %>
+</div>
+
+

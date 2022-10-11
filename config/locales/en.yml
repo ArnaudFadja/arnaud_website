@@ -1,0 +1,115 @@
+en:
+  articles:
+    index:
+      publications: "Publications"
+      journals: "International Journals"
+      chapters: "Book Chapters"
+      conferences: "International Conferences"
+      workshops: "International Workshops"
+    _listArticle:
+      detailsTitle: "Article details"
+      details: "Details"
+      detailsMessage: "View details on this article"
+      editMessage: "Edit this article"
+      destroyMessage: "Delete this article"
+
+  users:
+    name: "First name"
+    lastName: "Last Name"
+    email: "E-mail"
+    password: "Password"
+    passwordConfirm: "Password confirmation"
+    destroyMessage: "Delete this user"
+
+
+  global:
+      download: "Download"
+      publishedAt: "Published at"
+      comment: "Comments"
+      addComment: "Add Comment"
+      commentPlaceholder: "add your comment here"
+      deleteComment: "Delete this comment"
+      confirmDelete: "Are you sure?"
+      name: "Name"
+      messagePassword:
+        one: " 1 character minimum"
+        other: "%{count} characters minimum"
+      messageEmail: "gmail account recommended"
+      remember: "Remember me"
+      currentPassword: "Current password"
+      company: "COMPANY NAME"
+      contact: "CONTACT"
+      link: "USEFUL LINKS"
+      departement: "Research Department"
+      university: "Paragon semvox GmbH"
+      welcome: "Welcome"
+      confirmMessage: "You can confirm your account email through the link below:"
+      confirmAccount: "Confirm my account"
+      cancel: "Cancel"
+      resetMailSentNotification: "Email sent with password reset instructions"
+      resetPassword: "Reset password"
+      reset: "Reset"
+      changePassword: "Change your password"
+      newPassword: "New password"
+      newPasswordConfirmation: "Confirm new password"
+      forgotPassword: "Forgotten password?"
+
+
+  layout:
+    _navbarForm:
+      home: "Home"
+      me: "About me"
+      logout: "Logout"
+      editProfile: "Edit profile"
+      welcome: "Welcome"
+      login: "Login"
+      register: "Register"
+      language: "Language"
+
+  activerecord:
+    models:
+      article: "Article"
+      protagonist: "Protagonist"
+    attributes:
+      protagonist:
+        profession: "Profession"
+        department: "Department"
+        university: "University"
+        edifice: "Edifice"
+        address: "Address"
+        homeAddress: "Home address"
+        workAddres: "Work address"
+        phone: "Phone"
+        homePhone: "Home Phone"
+        workPhone: "Work address"
+        profilePhoto: "Profile photo"
+      article:
+        title: "Title"
+        text: "Editor"
+        category: "Category"
+        description: "Description"
+        #content: "Description"
+        date: "Date"
+        conferenceName: "Conference Name"
+        paper: "Paper"
+        paperUrl: "URL of the paper"
+  pundit:
+    default: 'You cannot perform this action.'
+    article_policy:
+      update?: 'You cannot update this article!'
+      edit?: 'You cannot edit this article!'
+      create?: 'You cannot create article!'
+      new?: 'You cannot create article!'
+      destroy?: 'You cannot delete article!'
+    author_policy:
+      update?: 'You cannot update this author!'
+      edit?: 'You cannot edit this author!'
+      create?: 'You cannot create this author!'
+      new?: 'You cannot create this author!'
+      destroy?: 'You cannot delete this author!'
+    comment_policy:
+      update?: 'You cannot update this comment!'
+      edit?: 'You cannot edit this comment!'
+      create?: 'You cannot create this comment!'
+      new?: 'You cannot create this comment!'
+      destroy?: 'You cannot delete this comment!'

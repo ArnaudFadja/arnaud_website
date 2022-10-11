@@ -1,0 +1,11 @@
+<%= form_with(model: [ @article, @article.comments.build ], class: "form-group", local: true) do |f| %>
+  <p>
+    <%= f.text_area :body, rows: "2", placeholder: "#{t 'global.commentPlaceholder'}", class: "w-25 p-2"%>
+    <%= f.hidden_field :commenter, value: current_user.name + "   " +current_user.lastName %>
+  </p>
+    <%= f.submit "#{t 'global.addComment'}", class: "text-info"%>
+  <% if current_user and  policy(@article.comments.build).edit? %>
+    <%= link_to 'Edit Article', edit_article_path(@article), class: "text-danger float-right" %>
+    <%end %>
+  </p>
+<% end %>

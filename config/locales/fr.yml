@@ -1,0 +1,109 @@
+fr:
+  articles:
+    index:
+      publications: "Publications"
+      journals: "Revues internationales"
+      chapters: "Chapitres de livres"
+      conferences: "Conférences internationales"
+      workshops: "Workshops internationaux"
+    _listArticle:
+      detailsTitle: "Détails sur l'article"
+      details: "Détails"
+      detailsMessage: "Voir les détails sur cet article"
+      editMessage: "Modifier cet article"
+      destroyMessage: "Supprimer cet article"
+  users:
+    name: "Prénom"
+    lastName: "Nom"
+    email: "E-mail"
+    password: "Password"
+    passwordConfirm: "Confirmation password"
+    destroyMessage: "Supprimer cet utilisateur"
+
+  global:
+    download: "Télécharger"
+    publishedAt: "Publié à"
+    comment: "Commentaires"
+    addComment: "Ajouter un commentaire"
+    commentPlaceholder: "Ajoutez votre commentaire ici"
+    deleteComment: "Supprimer ce commentaire"
+    confirmDelete: "Êtes-vous sûr?"
+    name: "Nom"
+    messagePassword:
+      one: "minimum 1 caractère"
+      other: "%{count} caractères minimum"
+    messageEmail: "compte gmail recommandé"
+    remember: "Se souvenir"
+    currentPassword: "Password actuel"
+    company: "Nom de l'entreprise"
+    contact: "CONTACT"
+    link: "LIENS UTILES"
+    departement: "Département de recherche"
+    university: "Paragon semvox GmbH"
+    welcome: "Bienvenu/e"
+    confirmMessage: "Vous pouvez confirmer l'e-mail de votre compte via le lien ci-dessous:"
+    confirmAccount: "Confirmer mon compte"
+    cancel: "Annuler"
+    resetMailSentNotification: "E-mail envoyé avec les instructions de réinitialisation du mot de passe"
+    resetPassword: "Réinitialiser le mot de passe"
+    reset: "Réinitialiser"
+    changePassword: "changez votre mot de passe"
+    newPassword: "Nouveau mot de passe"
+    newPasswordConfirmation: "Confirmez le nouveau mot de passe"
+    forgotPassword: "Mot de passe oublié?"
+
+  layout:
+    _navbarForm:
+      home: "Accueil"
+      me: "Sur moi"
+      logout: "Déconnexion"
+      editProfile: "Modifier profil"
+      welcome: "Bienvenue"
+      login: "Connexion"
+      register: "Inscription"
+      language: "Langue"
+
+  activerecord:
+    models:
+      article: "Article"
+      protagonist: "Protagonist"
+    attributes:
+      protagonist:
+        name: "Name"
+        LastName: "Last Name"
+        profession: "Profession"
+        department: "Department"
+        university: "University"
+        edifice: "Edifice"
+        workAddress: "Work address"
+        workPhone: "Work phone"
+        email: "E-mail"
+      article:
+        title: "Titre"
+        text: "Editeur"
+        category: "Catégorie"
+        description: "Description"
+        date: "Date"
+        conferenceName: "Nom de la conférence"
+        paper: "Paper"
+        paperUrl: "URL du papier"
+    pundit:
+      default: 'Vous ne pouvez pas effectuer cette action.'
+      article_policy:
+        update?: 'Vous ne pouvez pas ajourner cet article!'
+        edit?: 'Vous ne pouvez pas modifier cet article!'
+        create?: 'Vous ne pouvez pas créer cet article!'
+        new?: 'Vous ne pouvez pas créer cet article!'
+        destroy?: 'Vous ne pouvez pas supprimer cet article!'
+      author_policy:
+        update?: 'Vous ne pouvez pas ajourner cet auteur!'
+        edit?: 'Vous ne pouvez pas modifier cet auteur!'
+        create?: 'Vous ne pouvez pas créer cet auteur!'
+        new?: 'Vous ne pouvez pas créer cet auteur!'
+        destroy?: 'Vous ne pouvez pas supprimer cet auteur!'
+      comment_policy:
+        update?: 'Vous ne pouvez pas ajourner ce commentaire!'
+        edit?: 'Vous ne pouvez pas modifier ce commentaire!'
+        create?: 'Vous ne pouvez pas créer ce commentaire!'
+        new?: 'Vous ne pouvez pas créer ce commentaire!'
+        destroy?: 'Vous ne pouvez pas supprimer ce commentaire!'

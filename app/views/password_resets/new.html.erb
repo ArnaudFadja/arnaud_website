@@ -1,0 +1,21 @@
+<div id="login" class="bottom-three ">
+  <!-- <h3 class="text-center text-white pt-5">Login form</h3> -->
+  <div class="container">
+    <div id="login-row" class="row justify-content-center align-items-center ">
+      <div id="login-column" class="col-md-6">
+        <div id="login-box" class="col-md-12 ">
+          <h2 class="reset_password"><%= t 'global.resetPassword' %></h2>
+          <!-- <h2 class="reset_password">Reset password</h2> -->
+          <%= form_tag password_resets_path, :method => :post, class:"form" , id: "login-form"  do  %>
+          <div class="form-group ">
+            <label for="username" class="text-info">Email</label> <br />
+            <%= text_field_tag :email, params[:email], autofocus: true, autocomplete: "email" , id: "username" %>
+          </div>
+            <div class="actions"><%= submit_tag "#{t 'global.reset'}", class: "btn btn-info btn-md" %></div>
+          <%end %>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>

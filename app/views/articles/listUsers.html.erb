@@ -1,0 +1,46 @@
+<ol class="list-group">
+  <% len = @users.length%>
+  <% @users.each_with_index do |user, index| %>
+
+    <li class ="list-group-item"> &nbsp;&nbsp;&nbsp;
+      <span class="badge badge-secondary badge-danger"><%=index +1%></span>  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+      <p> Name: <%= "#{user.name} #{user.lastName}" %>.  </p>
+      <p>Email: <span class="font-weight-bold"> <%= user.email %>. </span></p>
+      <p>Roles: <%= user.getRoles %></p>
+      <p>
+      <%= form_with model: Role.all[0], :url => "/articles/setRole", method: "PUT", local: true do |f|  %>
+        <%= f.collection_select(:role_id, Role.all, :id, :name, options = {prompt: 'select a role'}, html_options = {class: "custom-select-sm"}) %>
+        <%= f.hidden_field :user_id, value: user.id %>
+        <%= f.submit "Add Role" %>
+      <%end %>
+      </p>
+
+      <p>
+        <%= form_with model: Role.all[0], :url => "/articles/removeRole", method: "delete",data: {confirm: "#{t 'global.confirmDelete'}"}, local: true do |f|  %>
+          <%= f.collection_select(:role_id, Role.all, :id, :name, options = {prompt: 'select a role'}, html_options = {class: "custom-select-sm"}) %>
+          <%= f.hidden_field :user_id, value: user.id %>
+          <%= f.submit "Remove Role" %>
+        <%end %>
+      </p>
+
+      <%= link_to removeUser_articles_path(user_id: user.id ), { class: 'tooltips, text-danger', 'data-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => "#{t 'users.destroyMessage'}", method: :delete, data: {confirm: "#{t 'global.confirmDelete'}" }} do %>
+        <i class="fa fa-trash" aria-hidden="true" ></i>
+      <%end %>
+
+      <!--
+      <%= link_to "Delete", removeUser_articles_path(:user_id =>  user.id ), method: :delete, data: {confirm: "#{t 'global.confirmDelete'}", user_id: user.id }%>
+      -->
+      <!--
+      <%= form_with model: user, :url => "/articles/removeUser", method: "delete",data: {confirm: "#{t 'global.confirmDelete'}"}, local: true do |f|  %>
+        <%= f.hidden_field :user_id, value: user.id %>
+        <%= f.submit "Remove User" %>
+        <%end %>
+      -->
+
+    </li>
+
+  <% end %>
+</ol>
+
+
+

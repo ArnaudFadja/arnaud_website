@@ -1,0 +1,36 @@
+<p>
+  <strong> <%= label(:article, :title)%>:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong> <%= label(:article, :text)%>:</strong>
+  <%= @article.text %>
+</p>
+
+<p>
+  <strong> <%= label(:article, :description) %>:</strong>
+  <%= @article.content %>
+</p>
+
+<!-- 
+<p>
+  <strong> <%= label(:article, :category) %>:</strong>
+  <%= @article.category %>
+</p>
+-->
+
+<p>
+  <strong> <%= t 'global.publishedAt' %>:</strong>
+  <%= @article.conferenceName %>
+</p>
+
+<p>
+  <strong><%=t 'global.download' %>: </strong>
+  <%= link_to( "[.pdf]", @article.paperUrl, class:"text-danger") %>
+  <!--
+  <% if @article.paper.attached? %>
+    <%= link_to( "[.pdf]", @article.paper, class:"text-danger") %>
+  <%end %>
+  -->
+</p>

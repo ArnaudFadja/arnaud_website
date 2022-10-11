@@ -1,0 +1,112 @@
+de:
+  articles:
+    index:
+      publications: "Publikationen"
+      journals: "Internationalen Zeitungen"
+      chapters: "Buchkapitel"
+      conferences: "Internationale Konferenzen"
+      workshops: "Internationale Workshops"
+    _listArticle:
+      detailsTitle: "Artikel details"
+      details: "Details"
+      detailsMessage: "Details zu diesem Artikel anzeigen"
+      editMessage: "Bearbeiten Sie diesen Artikel"
+      destroyMessage: "Zerstöre diesen Artikel"
+
+  users:
+    name: "Vorname"
+    lastName: "Nachname"
+    email: "E-mail"
+    password: "Passwort"
+    passwordConfirm: "Passwort Bestätigung"
+    destroyMessage: "Lösche diesen Benutzer"
+
+  global:
+      download: "Herunterladen"
+      publishedAt: "Veröffentlicht am"
+      comment: "Kommentare"
+      addComment: "Kommentar hinzufügen"
+      commentPlaceholder: "Hier Kommentar hinterlassen "
+      deleteComment: "Diesen Kommentar löschen"
+      confirmDelete: "Sind Sie sicher?"
+      name: "Name"
+      messagePassword:
+        one: "1 character minimum"
+        other: "mindestens %{count} zeichen"
+      messageEmail: "Google Mail-Konto empfohlen"
+      remember: "Merken"
+      currentPassword: "Aktuelles Passwort"
+      company: "Name der Firma"
+      contact: "KONTAKT"
+      link: "NÜTZLICHE LINKS"
+      departement: "Forschungsabteilung"
+      university: "Paragon semvox GmbH"
+      welcome: "Herzlich willkommen"
+      confirmMessage: "Sie können Ihre Konto-E-Mail-Adresse über den folgenden Link bestätigen:"
+      confirmAccount: "Bestätige mein Konto"
+      cancel: "Stornieren"
+      resetMailSentNotification: "E-Mail mit Passwort-Reset-Anweisungen gesendet"
+      resetPassword: "Passwort zurücksetzen"
+      reset: "Zurücksetzen"
+      changePassword: "Ändern Sie Ihr Passwort"
+      newPassword: "Neues passwort"
+      newPasswordConfirmation: "Bestätige neues Passwort"
+      forgotPassword: "Passwort vergessen?"
+
+
+  layout:
+    _navbarForm:
+      home: "Startseite"
+      me: "Über mich"
+      logout: "Ausloggen"
+      editProfile: "Profil bearbeiten"
+      welcome: "Willkommen"
+      login: "Einloggen"
+      register: "Registrieren"
+      language: "Sprache"
+
+  activerecord:
+    models:
+      article: "Artikel"
+      protagonist: "Protagonist"
+    attributes:
+      protagonist:
+        name: "Vorname"
+        LastName: "Nachname"
+        profession: "Beruf"
+        department: "Fachbereich"
+        university: "Universität"
+        edifice: "Gebäude"
+        workAddress: "Dienstanschrift"
+        workPhone: "Diensttelefon"
+        email: "E-mail"
+      article:
+        title: "Titel"
+        text: "Redakteur"
+        category: "Kategorie"
+        description: "Beschreibung"
+        date: "Datum"
+        conferenceName: "Name der Konferenz"
+        paper: "Beitrag"
+        paperUrl: "URL des Papiers"
+
+    pundit:
+      default: 'Sie können diese Aktion nicht ausführen.'
+      article_policy:
+        update?: 'Sie können diesen Artikel nicht aktualisieren!'
+        edit?: 'Sie können diesen Artikel nicht bearbeiten!'
+        create?: 'Sie können keinen Artikel erstellen!'
+        new?: 'Sie können keinen Artikel erstellen!'
+        destroy?: 'Sie können Artikel nicht löschen!'
+      author_policy:
+        update?: 'Sie können diesen Autor nicht aktualisieren!'
+        edit?: 'Sie können diesen Autor nicht bearbeiten!'
+        create?: 'Sie können diesen Autor nicht erstellen!'
+        new?: 'Sie können diesen Autor nicht erstellen!'
+        destroy?: 'Sie können diesen Autor nicht löschen!'
+      comment_policy:
+        update?: 'Sie können diesen Kommentar nicht aktualisieren!'
+        edit?: 'Sie können diesen Kommentar nicht bearbeiten!'
+        create?: 'Sie können diesen Kommentar nicht erstellen'
+        new?: 'Sie können diesen Kommentar nicht erstellen'
+        destroy?: 'Sie können diesen Kommentar nicht löschen!'

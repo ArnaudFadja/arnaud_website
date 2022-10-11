@@ -1,0 +1,114 @@
+it:
+  articles:
+    index:
+      publications: "Pubblicazioni"
+      journals: "Riviste internazionali"
+      chapters: "Capitoli di libri"
+      conferences: "Conferenze internazionali"
+      workshops: "Workshop internazionali"
+    _listArticle:
+      detailsTitle: "Dettagli dell'articolo"
+      details: "Dettagli"
+      detailsMessage: "Visualizza i dettagli su questo articolo"
+      editMessage: "Modifica questo articolo"
+      destroyMessage: "Elimina questo articolo"
+
+  users:
+    name: "Nome"
+    lastName: "Cognome"
+    email: "Email"
+    password: "Password"
+    passwordConfirm: "Conferma password"
+    destroyMessage: "Elimina questo utente"
+
+
+  global:
+    download: "Scarica"
+    publishedAt: "Pubblicato a"
+    comment: "Commenti"
+    addComment: "Aggiungi commento"
+    commentPlaceholder: "aggiungi il tuo commento qui"
+    deleteComment: "Elimina questo commento"
+    confirmDelete: "Sei sicuro?"
+    name: "Nome"
+    messagePassword:
+      one: "minimo 1 carattere"
+      other: "minimo %{count} caratteri"
+    messageEmail: "account Gmail consigliato"
+    remember: "Ricordami"
+    currentPassword: "Password attuale"
+    company: "nome dell'azienda"
+    contact: "CONTATTO"
+    link: "LINK UTILI"
+    departement: "Dipartimento di ricerca"
+    university: "Paragon semvox GmbH"
+    welcome: "Benvenuto/a"
+    confirmMessage: "Puo confermare l'email del suo account tramite il seguente link:"
+    confirmAccount: "Conferma il mio account"
+    cancel: "Annulla"
+    resetMailSentNotification: "Email inviata con le istruzioni per reimpostare la password"
+    resetPassword: "Reimposta la password"
+    reset: "Reimposta"
+    changePassword: "Cambia la tua password"
+    newPassword: "Nuova password"
+    newPasswordConfirmation: "Conferma nuova password"
+    forgotPassword: "Password dimenticata?"
+
+  layout:
+    _navbarForm:
+      home: "Home"
+      me: "Su di me"
+      logout: "Esci"
+      editProfile: "Cambia profilo"
+      welcome: "Benvenuto"
+      login: "Accedi"
+      register: "Registrati"
+      language: "Lingua"
+
+  activerecord:
+    models:
+      article: "Articolo"
+    attributes:
+      protagonist:
+        profession: "Professione"
+        department: "Dipartimento"
+        university: "Università"
+        edifice: "Edificio"
+        location: "Luogo"
+        address: "Indirizzo"
+        homeAddress: "Indirizzo di casa"
+        workAddres: "Indirrizzo del lavoro"
+        phone: "Telefono"
+        homePhone: "Telefono di casa"
+        workPhone: "Telefono di lavoro"
+        profilePhoto: "Foto del profilo"
+      article:
+        title: "Titolo"
+        text: "Editore"
+        category: "Categoria"
+        description: "Descrizione"
+        date: "Data"
+        conferenceName: "Nome della conferenza"
+        paper: "Paper"
+        paperUrl: "URL del paper"
+
+  pundit:
+    default: 'Non è possibile eseguire questa azione.'
+    article_policy:
+      update?: 'Non puoi aggiornare questo articolo!'
+      edit?: 'Non puoi modificare questo articolo!'
+      create?: 'Non puoi creare un articolo!'
+      new?: 'Non puoi creare un articolo!'
+      destroy?: 'Non puoi cancellare l''articolo!'
+    author_policy:
+      update?: 'Non puoi aggiornare questo autore!'
+      edit?: 'Non puoi modificare questo autore!'
+      create?: 'Non puoi creare questo autore!'
+      new?: 'Non puoi creare questo autore!'
+      destroy?: 'Non puoi cancellare questo autore!'
+    comment_policy:
+      update?: 'Non puoi aggiornare questo commento!'
+      edit?: 'Non puoi modificare questo commento!'
+      create?: 'Non puoi creare questo commento'
+      new?: 'Non puoi creare questo commento'
+      destroy?: 'Non puoi cancellare questo commento!'

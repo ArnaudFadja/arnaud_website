@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to new a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import 'bootstrap/scss/bootstrap';
+@import "./actiontext.scss";
+
+
+*{
+  LINE-HEIGHT:28px;
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+.line{
+  border-top: 4px solid #39abac
+}
+.articles{
+  padding-bottom: 20px;
+}
+.title-paper{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.register {
+  padding-left: 95px;
+}
+
+
+.bottom-three {
+   //margin-bottom: 3cm;
+   height: 70vh; // 60
+ }
+
+.forgotten {
+  margin-top: 20px;
+}
+
+.bottom-three-index {
+  //margin-bottom: 3cm;
+  height: 10vh;
+}
+
+a:hover{
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer{
+  //background-color: #c8b0b0;
+  background-color: #e2e2e2;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

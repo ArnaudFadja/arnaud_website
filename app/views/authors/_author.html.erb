@@ -1,0 +1,12 @@
+<p>
+  <strong>Name:</strong>
+  <%= author.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= author.name %>
+</p>
+<% if current_user && current_user.admin %>
+  <%= link_to 'Destroy comment', [author.article, author], method: :delete, data: { confirm: "#{t 'global.confirmDelete'}"} %>
+<%end %>

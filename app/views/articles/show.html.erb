@@ -1,0 +1,13 @@
+<h3 class="text-center  pt-4 display-3 text-info"><%= t 'articles._listArticle.detailsTitle' %></h3>
+
+<div class="container p-3  my-3 border ">
+
+  <%= render 'details',  locals: {article: @article} %>
+
+<h2><%= t 'global.comment' %></h2>
+<%= render @article.comments %>
+
+<% if current_user %>
+<%= render 'comments/form' %>
+<%end %>
+</div>

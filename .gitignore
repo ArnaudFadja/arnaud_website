@@ -48,3 +48,8 @@ Thumbs.db
 *.mov
 *.wmv
 
+# file generated
+db/schema.rb
+Gemfile.lock
+.env
+tmp

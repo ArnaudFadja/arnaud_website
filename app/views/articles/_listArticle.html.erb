@@ -1,0 +1,27 @@
+<ol class="list-group">
+  <% len = @articles.length%>
+  <% @articles.each_with_index do |article, index| %>
+
+    <li class ="list-group-item"> &nbsp;&nbsp;&nbsp;
+      <span class="badge badge-secondary badge-danger"><%=index +1%></span>  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+      <%= article.author_names %>. <span class="font-weight-bold"> <%= article.title %>. </span> <%= article.text %>
+      <%= link_to( "[.pdf]", article.paperUrl, class:"text-danger") %>
+      
+      <%= link_to  article_path(article), { class: 'tooltips, text-info', 'data-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => "#{t 'articles._listArticle.detailsMessage'}" } do %>
+          <i class="fa fa-info" aria-hidden="true"></i>
+        <%end %> 
+
+      <!-- <% if user_signed_in? and policy(article).show? %>  article_path(article) -->
+        
+      <!--<%end %> -->
+      <%= render partial: 'adminManagement',  locals: {article: article} %>
+    </li>
+    <% unless index+1 == len %>
+    <div class='row'>
+      <div class='col-lg-10 col-lg-offset-2'>
+        &nbsp;&nbsp;
+      </div>
+    </div>
+      <%end %>
+  <% end %>
+</ol>
