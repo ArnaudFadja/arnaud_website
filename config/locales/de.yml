@@ -58,6 +58,10 @@ de:
     _navbarForm:
       home: "Startseite"
       me: "Über mich"
+      research: "Forschung"
+      teaching: "Unterricht"
+      talks: "Talks"
+      thesis: "These"
       logout: "Ausloggen"
       editProfile: "Profil bearbeiten"
       welcome: "Willkommen"

@@ -59,6 +59,10 @@ en:
     _navbarForm:
       home: "Home"
       me: "About me"
+      research: "Research"
+      teaching: "Teaching"
+      talks: "Talks"
+      thesis: "Thesis"
       logout: "Logout"
       editProfile: "Edit profile"
       welcome: "Welcome"

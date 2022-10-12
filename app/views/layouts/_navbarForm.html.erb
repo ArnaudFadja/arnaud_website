@@ -7,10 +7,14 @@
     </button>
     <div class="collapse navbar-collapse" id="exCollapsingNavbar">
       <ul class="navbar-nav">
-        &emsp; &emsp; &emsp; <li class="nav-item active"><%= link_to  "#{t 'layout._navbarForm.home'}" , articles_path, class: "nav-link" %></li>
+        &emsp; &emsp; &emsp; 
+        <li class="nav-item active"><%= link_to  "#{t 'layout._navbarForm.home'}" , articles_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.research'}" , articles_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.teaching'}" , articles_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.talks'}" , articles_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.thesis'}" , articles_path, class: "nav-link" %> </li>
 
-        <!-- <li class="nav-item"><a href="#" class="nav-link"><%= t 'layout._navbarForm.me' %></a></li>
-
+        <!--
         <% if current_user %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
@@ -29,10 +33,10 @@
             </div>
           </li>
           <%end %>
-          -->
-         </ul>
+          -->  
+      </ul>
 
-       <!-- <li class="nav-item"><a href="#" class="nav-link">More</a></li>  justify-content-end-->
+       <!-- <li class="nav-item"><a href="#" class="nav-link">More</a></li>  justify-content-end -->
 
       <ul class="navbar-nav  ml-auto">
         <!-- <li class="nav-item order-2 order-md-10"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li> -->
@@ -61,6 +65,7 @@
         <% else %>
           <li class="nav-item"><%= link_to "#{t 'layout._navbarForm.register'}", new_user_registration_path , class: "nav-link", kind: "new"  %></li>
           <li class="nav-item"><%= link_to "#{t 'layout._navbarForm.login'}", new_user_session_path , class: "nav-link"%></li>
+          <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.me'}" , "https://www.linkedin.com/in/dr-arnaud-fadja-70335a183/", class: "nav-link" %> </li>
         <%end %>
         &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;
         <li class="nav-item dropdown">

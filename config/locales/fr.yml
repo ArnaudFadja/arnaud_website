@@ -56,6 +56,10 @@ fr:
     _navbarForm:
       home: "Accueil"
       me: "Sur moi"
+      research: "Recherches"
+      teaching: "Enseignements"
+      talks: "Talks"
+      thesis: "Thèses"
       logout: "Déconnexion"
       editProfile: "Modifier profil"
       welcome: "Bienvenue"
