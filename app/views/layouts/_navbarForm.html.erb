@@ -9,10 +9,10 @@
       <ul class="navbar-nav">
         &emsp; &emsp; &emsp; 
         <li class="nav-item active"><%= link_to  "#{t 'layout._navbarForm.home'}" , articles_path, class: "nav-link" %> </li>
-        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.research'}" , articles_path, class: "nav-link" %> </li>
-        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.teaching'}" , articles_path, class: "nav-link" %> </li>
-        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.talks'}" , articles_path, class: "nav-link" %> </li>
-        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.thesis'}" , articles_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.research'}" , researches_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.teaching'}" , teachings_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.talks'}" , talks_path, class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to  "#{t 'layout._navbarForm.thesis'}" , theses_path, class: "nav-link" %> </li>
 
         <!--
         <% if current_user %>

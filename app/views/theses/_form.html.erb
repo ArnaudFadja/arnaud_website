@@ -1,0 +1,32 @@
+<%= form_with(model: thesis, local: true) do |form| %>
+  <% if thesis.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(thesis.errors.count, "error") %> prohibited this thesis from being saved:</h2>
+
+      <ul>
+        <% thesis.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.text_field :year %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

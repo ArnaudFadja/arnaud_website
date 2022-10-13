@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :theses
+  resources :talks
+  resources :teachings
+  resources :researches
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
     resources :protagonists
     get 'authors/new'

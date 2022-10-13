@@ -35,7 +35,6 @@ class ArticlesController < ApplicationController
     @article.paper.attach(params[:paper])
     
     if @article.save
-      binding.pry
       redirect_to @article
     else
       render 'new'
