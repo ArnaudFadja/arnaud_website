@@ -65,6 +65,6 @@ class ResearchesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def research_params
-      params.require(:research).permit(:title, :description, :year)
+      params.require(:research).permit(:year, :title, :description)
     end
 end

@@ -6,12 +6,12 @@ gem 'sendgrid-ruby'
 gem 'friendly_id', '~> 5.4.0'
 gem 'dotenv-rails', groups: [:development, :test, :production]
 gem "aws-sdk-s3", require: false
-gem 'rolify', '~> 5.2'
+gem 'rolify', '~> 5.2' # manage role 
 # allows MTI multitaple inheritance in rails
 gem 'active_record-acts_as'
 gem 'devise'
 gem 'rails-i18n'
-gem 'pundit', '~> 2.1' # https://github.com/varvet/pundit
+gem 'pundit', '~> 2.1'    # https://github.com/varvet/pundit  (manahe authorization)
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
@@ -50,7 +50,7 @@ gem 'pry-byebug'
 
 # Reduces boot times through caching; required in config/boot.rb
 #gem 'bootsnap', '>= 1.4.2', require: false
-gem 'globalize', git: 'https://github.com/globalize/globalize'
+gem 'globalize', git: 'https://github.com/globalize/globalize' # manage record translation
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
