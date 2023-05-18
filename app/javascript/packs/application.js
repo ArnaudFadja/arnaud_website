@@ -9,6 +9,8 @@ require("@rails/activestorage").start()
 require("../channels")
 //require("trix")
 //import 'trix'
+//= require trix
+
 require("@rails/actiontext")
 //require ("jquery.turbolinks").start()
 
