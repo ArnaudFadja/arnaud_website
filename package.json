@@ -18,6 +18,6 @@
   "version": "0.1.0",
   "devDependencies": {
     "jquery.turbolinks": "^2.1.0",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^4.15.0"
   }
 }
