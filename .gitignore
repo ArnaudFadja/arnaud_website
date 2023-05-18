@@ -50,6 +50,6 @@ Thumbs.db
 
 # file generated
 db/schema.rb
-Gemfile.lock
+design
 .env
 tmp
