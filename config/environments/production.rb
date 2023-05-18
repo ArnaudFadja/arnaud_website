@@ -103,6 +103,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.serve_static_assets = false
+  config.assets.js_compressor = :uglifier
+  config.assets.compile = false
+  config.assets.digest = true
 
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
