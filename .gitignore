@@ -53,3 +53,4 @@ db/schema.rb
 design
 .env
 tmp
+/config/master.key

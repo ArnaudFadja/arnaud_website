@@ -7,7 +7,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("../channels")
-require("trix")
+//require("trix")
+//import 'trix'
 require("@rails/actiontext")
 //require ("jquery.turbolinks").start()
 
@@ -44,5 +45,5 @@ $(document).ready(function(){
     });
 });
 */
-require("trix")
+//require("trix")
 require("@rails/actiontext")
