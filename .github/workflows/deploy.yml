@@ -1,0 +1,50 @@
+name: Deploy to Glitch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: |
+          bundle install --jobs 4 --retry 3 --deployment --path vendor/bundle
+          npm ci
+
+      - name: Deploy to Glitch
+        run: |
+          git config --global user.name "Arnaud Fadja"
+          git config --global user.email "arnaud.fadja.n@gmail.com"
+          git clone --depth 1 <glitch-git-url> ./glitch
+          cd ./glitch
+
+          if [ ! -f ".env" ]; then
+            cp ../.env.production .env
+            bundle exec rails db:create
+          fi
+
+          cp -R ../. .
+
+          bundle exec rails db:migrate
+
+          git add .
+          git commit -m "Deploy changes"
+          git push origin main
+
