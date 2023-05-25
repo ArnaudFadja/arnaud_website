@@ -117,6 +117,7 @@ GEM
       dotenv (= 2.8.1)
       railties (>= 3.2)
     erubi (1.12.0)
+    execjs (2.8.1)
     ffi (1.15.5)
     font_awesome5_rails (1.5.0)
       nokogiri (>= 1.11.3)
@@ -267,6 +268,8 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2023.3)
       tzinfo (>= 1.0.0)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.0)
@@ -328,6 +331,7 @@ DEPENDENCIES
   trix
   turbolinks (~> 5)
   tzinfo-data
+  uglifier
   web-console (>= 3.3.0)
   webdrivers
   webpacker (>= 4.0.x)
