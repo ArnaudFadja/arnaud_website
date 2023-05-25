@@ -4,5 +4,17 @@
   "main": "index.js",
   "repository": "git@github.com:ArnaudFadja/arnaud_website.git",
   "author": "ArnaudFadja <arnaud.fadja.n@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@popperjs/core": "^2.11.6",
+    "@rails/webpacker": "5.0.1",
+    "bootstrap": "^5.2.3",
+    "trix": "^2.0.5",
+    "webpack": "4.46.0",
+    "webpack-dev-middleware": "5.3.3"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.15.0"
+  }
 }
