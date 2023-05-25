@@ -7,7 +7,7 @@
       <%= article.author_names %>. <span class="font-weight-bold"> <%= article.title %>. </span> <%= article.text %>
       <%= link_to( "[.pdf]", article.paperUrl, class:"text-danger") %>
       
-      <%= link_to  article_path(article), { class: 'tooltips, text-info', 'data-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => "#{t 'articles._listArticle.detailsMessage'}" } do %>
+      <%= link_to  article_path(article), { class: 'tooltips, text-info', 'data-bs-toggle' => 'tooltip', 'data-placement' => 'top', :title => '', 'data-original-title' => "#{t 'articles._listArticle.detailsMessage'}" } do %>
           <i class="fa fa-info" aria-hidden="true"></i>
         <%end %> 
 

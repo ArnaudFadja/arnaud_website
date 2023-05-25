@@ -2906,7 +2906,7 @@ __webpack_require__(/*! @rails/actiontext */ "../node_modules/@rails/actiontext/
 //require('./myJs')
 
 document.addEventListener("turbolinks:load", function () {
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-bs-toggle="tooltip"]').tooltip();
 });
 $(document).on("turbolinks:load", function () {
   gtag('config', 'UA-176057162-1', {

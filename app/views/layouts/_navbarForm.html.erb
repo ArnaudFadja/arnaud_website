@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top " role="navigation">
 
     <!--<a class="navbar-brand" href="#">Brand</a> -->
-    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-target="#exCollapsingNavbar">
       &#9776;
     </button>
     <div class="collapse navbar-collapse" id="exCollapsingNavbar">
@@ -21,7 +21,7 @@
         <!--
         <% if current_user %>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Projects</a>
             <div class="dropdown-menu">
               <a class="dropdown-item text-uppercase" href="#">MACHINE LEARNING @ UNIFE</a>
               <a class="dropdown-item text-uppercase" href="#">SYSTEM AFRIK INFORMATION TECHNOLOGY</a>
@@ -30,7 +30,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Courses</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Courses</a>
             <div class="dropdown-menu">
               <a class="dropdown-item text-uppercase" href="#">Programming language</a>
               <a class="dropdown-item text-uppercase" href="#">Deep learning</a>
@@ -54,7 +54,7 @@
           </li>
           -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> <span class=" text-success">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"> <span class=" text-success">
                 <%= current_user.name  %> </span></a>
             <div class="dropdown-menu">
               <%= link_to "#{t 'layout._navbarForm.editProfile'}", edit_user_registration_path , class: "dropdown-item text-uppercase" %>
@@ -73,7 +73,7 @@
         <%end %>
         &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> <%=t 'layout._navbarForm.language' %></a> <!--  -->
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"> <%=t 'layout._navbarForm.language' %></a> <!--  -->
           <div class="dropdown-menu">
             <%= link_to "English", url_for(locale: :en), class: "dropdown-item text-uppercase" %>
         <%= link_to 'Italiano', url_for(locale: :it), class: "dropdown-item text-uppercase" %>

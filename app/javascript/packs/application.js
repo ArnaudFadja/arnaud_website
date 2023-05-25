@@ -42,7 +42,7 @@ import "@fortawesome/fontawesome-free/js/all";
 import './myJs'
 
 document.addEventListener("turbolinks:load", () => {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-bs-toggle="tooltip"]').tooltip()
 
 })
 

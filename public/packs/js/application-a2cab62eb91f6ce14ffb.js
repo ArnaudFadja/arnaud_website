@@ -2901,7 +2901,7 @@ __webpack_require__(/*! ./myJs */ "./app/javascript/packs/myJs.js");
 //import './myJs'
 
 document.addEventListener("turbolinks:load", function () {
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-bs-toggle="tooltip"]').tooltip();
 });
 $(document).on("turbolinks:load", function () {
   gtag('config', 'UA-176057162-1', {
