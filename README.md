@@ -26,3 +26,6 @@ Things you may want to cover:
 - In the .env file assign to ADMIN_USER environment variable the  the id of the user you want to assign/remove the admin role. e.g ADMIN_USER = 1
 - restart rails with "crlt+c"/"cmd+c" and "rails s"
 - run the rake task "bundle exec rake set_admin" to assign the admin role or "rake remove_admin" to remove the admin role
+
+* Generate assets
+- bundle exec rails webpacker:compile
