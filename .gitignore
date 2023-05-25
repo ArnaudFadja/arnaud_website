@@ -55,7 +55,7 @@ design
 tmp
 /config/master.key
 
-/public/packs
+
 /public/packs-test
 
 /yarn-error.log
