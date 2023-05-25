@@ -1,24 +1,24 @@
 {
-  "application.js": "/packs/js/application-86c21680658adc269a67.js",
-  "application.js.map": "/packs/js/application-86c21680658adc269a67.js.map",
+  "application.js": "/packs/js/application-43ce52441f8c64ab65af.js",
+  "application.js.map": "/packs/js/application-43ce52441f8c64ab65af.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-86c21680658adc269a67.js"
+        "/packs/js/application-43ce52441f8c64ab65af.js"
       ],
       "js.map": [
-        "/packs/js/application-86c21680658adc269a67.js.map"
+        "/packs/js/application-43ce52441f8c64ab65af.js.map"
       ]
     },
     "myJs": {
       "js": [
-        "/packs/js/myJs-35190f690f2725215e54.js"
+        "/packs/js/myJs-a5c8e6db3616de423cbf.js"
       ],
       "js.map": [
-        "/packs/js/myJs-35190f690f2725215e54.js.map"
+        "/packs/js/myJs-a5c8e6db3616de423cbf.js.map"
       ]
     }
   },
-  "myJs.js": "/packs/js/myJs-35190f690f2725215e54.js",
-  "myJs.js.map": "/packs/js/myJs-35190f690f2725215e54.js.map"
+  "myJs.js": "/packs/js/myJs-a5c8e6db3616de423cbf.js",
+  "myJs.js.map": "/packs/js/myJs-a5c8e6db3616de423cbf.js.map"
 }

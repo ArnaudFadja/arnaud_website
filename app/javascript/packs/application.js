@@ -23,12 +23,23 @@ require("@rails/actiontext")
 // const imagePath = (name) => images(name, true)
 
 //require("bootstrap")
-import 'bootstrap'
+//import 'bootstrap'
+
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+import 'jquery';
+// import 'jquery'
+//= require jquery
+
+//= require jquery-ui
+
+// import 'bootstrap/js/dist/dropdown'
+
 //import '@fortawesome/fontawesome-free'
 import "@fortawesome/fontawesome-free/js/all";
 //require("@fortawesome/fontawesome-free")
-require('./myJs')
-//import './myJs'
+//require('./myJs')
+import './myJs'
 
 document.addEventListener("turbolinks:load", () => {
     $('[data-toggle="tooltip"]').tooltip()
