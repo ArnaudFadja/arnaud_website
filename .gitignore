@@ -4,7 +4,7 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 # Node artifact files
-node_modules/
+#node_modules/
 dist/
 
 # Compiled Java class files
@@ -57,7 +57,7 @@ tmp
 
 /public/packs
 /public/packs-test
-/node_modules
+
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
